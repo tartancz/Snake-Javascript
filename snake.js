@@ -203,9 +203,6 @@ class website{
     static show(element, display='flex'){
         element.style.display = display
     }
-    static deleteAllSubElement(element){
-
-    }
 
     static flash(message){
         let messageEle = document.getElementById('message')
