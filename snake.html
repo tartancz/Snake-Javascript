@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="game-off" class="game-setting">
+    <div class="setting-wrapper">
+        <div class="difficulty setting">
+            <h1>SET DIFFICULTY</h1>
+            <div class="option">
+                <input type="radio" name="difficulty" id="baby" value="1000">
+                <label for="baby">baby</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="difficulty" id="easy" value="500">
+                <label for="easy">easy</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="difficulty" id="medium" value="100">
+                <label for="medium">medium</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="difficulty" id="hard" value="50">
+                <label for="hard">hard</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="difficulty" id="impossible" value="20">
+                <label for="impossible">impossible</label>
+            </div>
+        </div>
+        <div class="mapSize setting">
+            <h1>GAME SIZE</h1>
+            <div class="option">
+                <input type="radio" name="map" id="small" value="10">
+                <label for="small">small</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="map" id="mid" value="25">
+                <label for="mid">mid</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="map" id="big" value="40">
+                <label for="big">big</label>
+            </div>
+        </div>
+    </div>
+    <button onclick="buttonStart()">start</button>
+</div>
+<h1 id="message"></h1>
+<div id="game-on">
+<button onclick="stop()">STOP</button>
+</div>
+<script src="snake.js"></script>
+
+</body>
+</html>
